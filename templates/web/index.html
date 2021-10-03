@@ -1,0 +1,36 @@
+{% extends 'web/base.html' %}
+
+{% block main %}
+
+    <body class="d-flex h-100 text-center text-white bg-dark">
+
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">@blogdomarcio </h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+{#                    <a class="nav-link active" aria-current="page" href="#">Home</a>#}
+{#                    <a class="nav-link" href="#">Features</a>#}
+{#                    <a class="nav-link" href="#">Contact</a>#}
+                </nav>
+            </div>
+        </header>
+
+        <main class="px-3">
+            <h1>Docker (Django / Postgress)</h1>
+            <p class="lead">Uma aplicação Django, com os principais pacotes instalados.</p>
+            <p class="lead">
+                Django, psycopg2, python-decouple, sweetify, django-smuggler, django_bootstrap5
+
+            </p>
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            <p>Build by <a href="https://instagram.com/blogdomarcio" class="text-white">@blogdomarcio</a></p>
+        </footer>
+
+    </div>
+    </body>
+
+
+{% endblock %}
