@@ -13,6 +13,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 CMD python manage.py collectstatic --noinput
+CMD python manage.py migrate --noinput
 
 COPY ./entrypoint.sh /
 CMD ["sh", "/entrypoint.sh"]
